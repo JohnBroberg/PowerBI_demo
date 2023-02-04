@@ -1,3 +1,4 @@
+--SQL Demo
 
 select customer_id, count(*)
 from sales
