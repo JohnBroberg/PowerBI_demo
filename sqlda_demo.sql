@@ -1,4 +1,4 @@
---SQL Demo
+--SQL for PowerBI_demo
 
 select customer_id, count(*)
 from sales
