@@ -51,7 +51,7 @@ FROM daily_revenue t1
         ON t1.sales_transaction_date = t2.sales_transaction_date
 ORDER BY 1 DESC
 ;
--- result
+-- sample result
 -- "sales_transaction_date"	"revenue_daily"	"revenue_30day_avg"
 -- "2019-05-31"	387619.841	221246.87610000005
 -- "2019-05-30"	326009.717	208762.0401333334
