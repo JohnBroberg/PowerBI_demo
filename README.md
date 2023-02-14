@@ -1,6 +1,6 @@
 # PowerBI_demo
 
-<li>Power BI dashboard of revenue analyses for fictitious companny ZoomZoom .</li>
+Power BI dashboard of revenue analyses for fictitious companny ZoomZoom .
 
 
 ## Getting Started
