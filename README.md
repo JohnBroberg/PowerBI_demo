@@ -1,8 +1,7 @@
 # PowerBI_demo
-<><ol>
-<li>Extract H-1B Employer Data Hub data from USCIS.gov.</li>
-<li>Transform into a single tidy compressed CSV file (located in h1b_hub_data.zip) for Load.</li>
-<></ol>
+
+<li>Power BI dashboard of revenue analyses for fictitious companny ZoomZoom .</li>
+
 
 ## Getting Started
 
@@ -12,7 +11,7 @@ Run H1B_Hub.ipynb in a Jupyter Notebook with Python 3 or newer.
 
 You will need
 
-* Web browser
+* Power BI Desktop: https://www.microsoft.com/en-us/download/details.aspx?id=58494
 * Jupyter Notebooks (or another way to run Python 3 or newer)
 * pandas library: https://pandas.pydata.org/
 
