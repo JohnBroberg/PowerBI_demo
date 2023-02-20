@@ -29,25 +29,31 @@ FROM sales
 
 
 --Window function and subquery (CTE) demo: Rolling 30-day avg of revenue
-DROP VIEW window_sales;
+DROP MATERIALIZED VIEW daily_revenue_mv;
 
 --Note: DO NOT run DROP VIEW and CREATE VIEW at same time; will create fatal error
 
-CREATE VIEW window_sales AS
+-- Optimize query with MATERIALIZED VIEW and INDEX: Total Time from 5.78 ms to 1.221 ms
+-- Create a materialized view of the daily revenue
+CREATE MATERIALIZED VIEW daily_revenue_mv AS
 
-WITH daily_revenue AS (
 SELECT sales_transaction_date::DATE
     , SUM(sales_amount) AS revenue_daily
 FROM sales
 GROUP BY 1
-)
+;
+
+-- Index the materialized view to make it faster to query
+CREATE INDEX daily_revenue_mv_date_idx ON daily_revenue_mv(sales_transaction_date);
+
+-- Self-JOIN daily_revenue_mv; add Window Function revenue_30day_avg 
 SELECT t1.sales_transaction_date
     , t2.revenue_daily
     , AVG(t1.revenue_daily) OVER 
         (ORDER BY t1.sales_transaction_date 
          ROWS BETWEEN 29 PRECEDING AND CURRENT ROW) AS revenue_30day_avg
-FROM daily_revenue t1
-    INNER JOIN daily_revenue t2
+FROM daily_revenue_mv t1
+    INNER JOIN daily_revenue_mv t2
         ON t1.sales_transaction_date = t2.sales_transaction_date
 ORDER BY 1 DESC
 ;
