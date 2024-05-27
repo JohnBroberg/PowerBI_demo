@@ -16,3 +16,4 @@ You will need
 
 
 ### Sample Screenshots
+![Screenshot 2024-05-23 163052](https://github.com/JohnBroberg/PowerBI_demo/assets/23372245/8391f56a-e84d-4f88-9d20-e0bd10203d95)
