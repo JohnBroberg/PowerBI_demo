@@ -23,3 +23,11 @@ Revenue by Year
 
 Dealership Ranking
 ![Screenshot 2024-05-27 160521](https://github.com/JohnBroberg/PowerBI_demo/assets/23372245/972b47f4-03bc-406b-b3a3-39a7c090a49f)
+
+
+Revenue Detail
+![Screenshot 2024-05-27 160543](https://github.com/JohnBroberg/PowerBI_demo/assets/23372245/8408a55a-a6ae-4791-bbfd-825a79073d1f)
+
+
+Revenue 2019 YTD
+![Screenshot 2024-05-27 160604](https://github.com/JohnBroberg/PowerBI_demo/assets/23372245/c94c50dc-af08-44af-a158-904f7e8fe051)
