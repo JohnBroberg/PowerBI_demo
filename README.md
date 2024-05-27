@@ -16,4 +16,10 @@ You will need
 
 
 ### Sample Screenshots
+
+Revenue by Year
 ![Screenshot 2024-05-23 163052](https://github.com/JohnBroberg/PowerBI_demo/assets/23372245/8391f56a-e84d-4f88-9d20-e0bd10203d95)
+
+
+Dealership Ranking
+![Screenshot 2024-05-27 160521](https://github.com/JohnBroberg/PowerBI_demo/assets/23372245/972b47f4-03bc-406b-b3a3-39a7c090a49f)
